@@ -507,6 +507,10 @@ class BaseClient
 
             $statusCode = $response->getStatusCode();
 
+            if ($statusCode === 400) {
+                throw new ResponseException(json_encode($data), $statusCode);
+            }
+
             $message = $data['detail'] ??
                 $data['error_description'] ??
                 $statusCode . ' ' . $response->getReasonPhrase();
