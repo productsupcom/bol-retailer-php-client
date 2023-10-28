@@ -1,5 +1,5 @@
 {
-    "name": "picqer/bol-retailer-php-client",
+    "name": "productsupcom/pup-bol-retailer-php-client",
     "type": "library",
     "description": "Bol.com Retailer API client",
     "keywords": [
